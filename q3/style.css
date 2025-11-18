@@ -1,0 +1,81 @@
+body {
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.product-card {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.product-title {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+.product-subtitle {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rating {
+    background: #388E3C;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.reviews {
+    color: #444;
+    font-size: 14px;
+}
+
+.assured-logo {
+    width: 60px;
+}
+
+.price-row {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.discount {
+    color: green;
+    font-weight: bold;
+}
+
+.bank-offer {
+    margin-top: 10px;
+    color: #008000;
+    font-weight: 600;
+}
