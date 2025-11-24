@@ -1,0 +1,21 @@
+// q15 by Kajal
+
+const username = "Harish";
+const course = "JavaScript";
+console.log(`Hello ${username}, welcome to the ${course} course!`);
+
+const name = "Harish Verma";
+const age = 67;
+const student = {
+  name,
+  age,
+  greet() {
+    console.log("Hello");
+  }
+};
+
+student.greet();
+
+const getFullName = (first, last) => `${first} ${last}`;
+
+console.log(getFullName("harish", "Verma"));
