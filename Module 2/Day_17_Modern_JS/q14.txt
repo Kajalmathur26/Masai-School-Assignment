@@ -1,0 +1,15 @@
+// q14 By Kajal
+
+const profile = { name: "Priyanka", age: 25, address: { city: "Bangalore", zipcode: "560001" } };
+const updates = { age: 26, address: { zipcode: "560002", country: "India" } };
+
+const mergedProfile = {
+  ...profile,
+  ...updates,
+  address: {
+    ...profile.address,
+    ...updates.address
+  }
+};
+
+console.log(mergedProfile);

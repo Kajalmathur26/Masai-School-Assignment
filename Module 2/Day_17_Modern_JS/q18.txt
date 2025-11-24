@@ -1,0 +1,26 @@
+// a)
+if (true) {
+  let x = 100;
+  var y = 200;
+}
+console.log(y);
+
+// b)
+const profile = {
+  user: {
+    details: {
+      email: "Kajal@gmail.com"
+    }
+  }
+};
+
+console.log(profile.user?.details?.email);
+
+
+// c)
+const company = {
+  name: "MASAI",
+  manager: null
+};
+
+console.log(company.manager?.department?.name); 

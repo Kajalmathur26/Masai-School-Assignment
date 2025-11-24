@@ -1,0 +1,12 @@
+// q13 by Kajal
+
+const people = [
+  { name: "Sachin", address: { city: "Mumbai", street: { name: "Marine Drive", number: 789 } } },
+  { name: "Virat", address: { city: "Delhi", street: { name: "Connaught Place", number: 101 } } }
+];
+
+const result = people.map(({ name, address: { city, street: { name: streetName } } }) => 
+  `${name} lives in ${city} on ${streetName}`
+);
+
+console.log(result);

@@ -1,0 +1,156 @@
+//q19 By Kajal
+
+// 1. Template Literals + Expressions
+console.log(`${8} + ${12} = ${8 + 12}`);
+console.log(`Morning
+Afternoon
+Evening`);
+const firstName = "Rahul";
+const lastName = "Sharma";
+console.log(`${firstName} ${lastName}`);
+
+// 2. Arrow Functions & this
+const square = n => n * n;
+const obj = {
+  value: 75,
+  test: function() { console.log(this.value); }
+};
+obj.test();
+
+// 3. Rest, Spread & Copying Objects
+const product = { name: "Notebook", price: 50 };
+const productCopy = { ...product };
+const aObj = { x: 10 };
+const bObj = { y: 20 };
+const mergedObjAB = { ...aObj, ...bObj };
+const maxValue = (...nums) => Math.max(...nums);
+
+// 4. Destructuring & Optional Chaining
+const arr = [5, 15, 25];
+const [a1, b1] = arr;
+const laptop = { brand: "HP", ram: "16GB" };
+const { brand } = laptop;
+const info = {};
+console.log(info?.details);
+
+// 5. Scoping (let/var/const)
+for (var i = 0; i < 3; i++) {}
+console.log(i);
+for (let j = 0; j < 3; j++) {}
+// console.log(j);
+
+// 6. Ternary Operator – Practice
+let kmph = 55;
+let speed = kmph > 60 ? "Fast" : "Normal";
+let age = 17;
+console.log(age >= 18 ? "Adult" : "Minor");
+let num = -3;
+console.log(num > 0 ? "Positive" : num === 0 ? "Zero" : "Negative");
+
+// 7. Spread, Rest & Arrays
+const nums = [10,20,30];
+const newNums = [...nums,40,50];
+const arr1 = ["Delhi","Mumbai"];
+const arr2 = ["Kolkata"];
+const combined = [...arr1, ...arr2];
+const printNames = (...names) => names;
+console.log(printNames("Amit","Neha","Riya"));
+
+// 8. Object Destructuring & Shorthand
+const user1 = { id: 201, status: "active" };
+const id2 = 201;
+const role2 = "moderator";
+const user2 = { id: id2, role: role2 };
+const user3 = { id: id2, role: role2, greet() { console.log("Hello there"); } };
+user3.greet();
+
+// 9. Template Literals (More Practice)
+console.log(`Today is ${new Date().toDateString()}`);
+const NAME = "Anjali";
+const SCORE = 85;
+console.log(`Hello ${NAME}, your score is ${SCORE}/100`);
+
+// 10. Arrow Function Shorthands
+const add = (x, y) => x + y;
+const isAdultArrow = age => age >= 18;
+const double = n => n * 2;
+
+// 11. Spread Operator (Arrays & Objects)
+const arrOriginal = [11,22,33];
+const arrClone = [...arrOriginal];
+const arrWith100 = [100, ...arrOriginal];
+const objA = { a:5, b:10 };
+const objB = { b:15, c:20 };
+const mergedObjFinal = { ...objA, ...objB };
+
+// 12. Optional Chaining (More Practice)
+const userOpt = { name: "Kiran", address: { city: "Chennai" } };
+console.log(userOpt.address?.city);
+console.log(userOpt.job?.title);
+const company = { name: "Infosys", manager: null };
+console.log(company.manager?.department?.name);
+
+// 13. Multi-Level Array and Object Destructuring
+const people = [
+  { name: "Rohan", address: { city: "Pune", street: { name: "FC Road", number: 101 } } },
+  { name: "Priya", address: { city: "Bangalore", street: { name: "MG Road", number: 202 } } },
+  { name: "Amit", address: { city: "Hyderabad", street: { name: "Hitech City", number: 303 } } },
+  { name: "Sneha", address: { city: "Chennai", street: { name: "Anna Salai", number: 404 } } }
+];
+const resultPeople = people.map(({ name, address: { city, street: { name: streetName } } }) => 
+  `${name} lives in ${city} on ${streetName}`
+);
+console.log(resultPeople);
+
+// 14. Merging and Updating Nested Objects with Spread Operator
+const profileIndia = { name: "Ananya", age: 23, address: { city: "Kolkata", zipcode: "700001" } };
+const updatesIndia = { age: 24, address: { zipcode: "700002", country: "India" } };
+const mergedProfileIndia = { ...profileIndia, ...updatesIndia, address: { ...profileIndia.address, ...updatesIndia.address } };
+console.log(mergedProfileIndia);
+
+// 15. Template Literals & Shorthands
+const username = "Rakesh";
+const course = "ReactJS";
+console.log(`Hello ${username}, welcome to the ${course} course!`);
+const nameS = "Vikram";
+const ageS = 28;
+const student = { name: nameS, age: ageS, greet() { console.log("Hi"); } };
+student.greet();
+const getFullName = (first, last) => `${first} ${last}`;
+console.log(getFullName("Vikram","Patel"));
+
+// 16. Arrow Functions & Ternary Operator
+const isEven = n => n % 2 === 0;
+let marks = 72;
+const resultMarks = marks >= 35 ? "Pass" : "Fail";
+console.log(resultMarks);
+const greetFunc = nameG => console.log(`Hello, ${nameG ? nameG : "Guest"}`);
+greetFunc("Riya");
+greetFunc();
+
+// 17. Spread, Rest & Destructuring
+const arrA = [7,8,9];
+const arrB = [10,11];
+const mergedArrAB = [...arrA, ...arrB];
+console.log(mergedArrAB);
+const sumNums = (...numsRest) => numsRest.reduce((acc, curr) => acc + curr, 0);
+console.log(sumNums(2,4,6,8,10));
+const userDestruct = { name: "Siddharth", age: 30, address: { city: "Jaipur", pin: 302001 } };
+const { name: nameU, address: { city: cityU, pin: pinU } } = userDestruct;
+console.log(nameU, cityU, pinU);
+
+// 18. Scoping & Optional Chaining
+if (true) { let x = 50; var y = 60; }
+console.log(y);
+// console.log(x);
+const profileOpt = { user: { details: { email: "sara@mail.com" } } };
+console.log(profileOpt.user?.details?.email);
+console.log(profileOpt.user?.details?.phone);
+const companyOpt = { name: "Wipro", manager: null };
+console.log(companyOpt.manager?.department?.name);
+
+// 19. Template Literals + Expressions
+console.log(`${10} + ${15} = ${10 + 15}`);
+console.log(`Sun
+Mon
+Tue`);

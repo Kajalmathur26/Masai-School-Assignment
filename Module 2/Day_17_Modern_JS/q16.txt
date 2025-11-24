@@ -1,0 +1,11 @@
+// q16 by kajal
+
+const isEven = n => n % 2 === 0;
+
+const marks = 60;
+const result = marks >= 33 ? "Pass" : "Fail";
+console.log(result);
+
+const greet = name => console.log(`Hello, ${name ? name : "User"}`);
+
+
