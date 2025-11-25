@@ -1,0 +1,14 @@
+// Q11 by Kajal
+
+function processProducts(p){
+  const names=p.map(x=>x.name);
+  p.forEach(i=>{
+    console.log(i.name+(i.price>50?" is above 50":" is below 50"));
+  });
+  return names;
+}
+
+processProducts([
+  {name:"Mobile",price:20000},
+  {name:"Mouse",price:500}
+]);

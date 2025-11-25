@@ -1,0 +1,17 @@
+// Q12 by Kajal
+function processStudents(students){
+  return students
+    .filter(s=>s.marks>60)
+    .sort((a,b)=>b.marks-a.marks)
+    .map(s=>s.name);
+}
+
+const studentData=[
+  {name:"Aarav",marks:58},{name:"Riya",marks:85},{name:"Vivaan",marks:92},
+  {name:"Ishita",marks:45},{name:"Aditya",marks:76},{name:"Sneha",marks:63},
+  {name:"Karan",marks:89},{name:"Ananya",marks:95},{name:"Rohan",marks:54},
+  {name:"Diya",marks:79},{name:"Siddharth",marks:67},{name:"Meera",marks:88},
+  {name:"Arjun",marks:91},{name:"Tanya",marks:72},{name:"Kabir",marks:82}
+];
+
+console.log(processStudents(studentData));

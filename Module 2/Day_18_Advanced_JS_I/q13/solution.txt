@@ -1,0 +1,14 @@
+// Q13 by Kajal
+function processCategories(categories){
+  const counts=categories.reduce((acc,cat)=>{
+    acc[cat]=(acc[cat]||0)+1;
+    return acc;
+  },{});
+
+  return Object.entries(counts)
+    .sort((a,b)=>b[1]-a[1])
+    .map(([cat])=>cat);
+}
+
+const categories=["fruits","vegetables","fruits","snacks","vegetables","snacks","beverages","snacks"];
+console.log(processCategories(categories));

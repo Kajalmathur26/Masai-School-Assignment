@@ -1,0 +1,24 @@
+// Q14 by Kajal
+function evaluateEmployees(employees){
+  const getPerformance=r=>{
+    if(r>4.5) return "Excellent";
+    if(r>=3) return "Good";
+    return "Needs Improvement";
+  };
+
+  const priority={Excellent:3,Good:2,"Needs Improvement":1};
+
+  return employees
+    .filter(e=>e.tasksCompleted>5)
+    .map(e=>({name:e.name,performance:getPerformance(e.rating)}))
+    .sort((a,b)=>priority[b.performance]-priority[a.performance]);
+}
+
+const employeeData=[
+  {name:"Raj",tasksCompleted:8,rating:4.7},
+  {name:"Simran",tasksCompleted:4,rating:4.0},
+  {name:"Amit",tasksCompleted:6,rating:3.5},
+
+];
+
+console.log(evaluateEmployees(employeeData));
