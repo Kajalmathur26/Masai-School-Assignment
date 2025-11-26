@@ -1,0 +1,39 @@
+// Q20 - Ques 2 by Kajaol
+
+function createBankAccount() {
+    let balance = 0;
+    let transactionHistory = [];
+
+    return {
+        deposit: function(amount) {
+            balance += amount;
+            transactionHistory.push(`Deposited: ${amount}`);
+            console.log("Deposited:", amount);
+        },
+        withdraw: function(amount) {
+            if (amount <= balance) {
+                balance -= amount;
+                transactionHistory.push(`Withdrawn: ${amount}`);
+                console.log("Withdrawn:", amount);
+            } else {
+                console.log("Insufficient balance");
+            }
+        },
+        getBalance: function() {
+            console.log("Current balance:", balance);
+            return balance;
+        },
+        getTransactionHistory: function() {
+            console.log("Transaction History:", transactionHistory);
+            return transactionHistory;
+        }
+    };
+}
+
+const account = createBankAccount();
+account.deposit(3500);
+account.withdraw(2200);
+account.withdraw(400);
+account.getBalance();
+account.getTransactionHistory();
+console.log(account.balance);

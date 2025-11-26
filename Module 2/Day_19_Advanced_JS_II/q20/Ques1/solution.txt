@@ -1,0 +1,29 @@
+// Q20  - Ques 1 by Kajal
+
+function createCounter() {
+    let count = 0;
+
+    return {
+        increment: function() {
+            count++;
+            console.log("Current count:", count);
+        },
+        decrement: function() {
+            count--;
+            console.log("Current count:", count);
+        },
+        display: function() {
+            console.log("Current count:", count);
+        }
+    };
+}
+
+const counter = createCounter();
+counter.increment();
+counter.increment();
+counter.decrement();
+counter.display();
+
+const counter2 = createCounter();
+counter2.increment();
+counter.display();
