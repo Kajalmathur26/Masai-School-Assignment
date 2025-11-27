@@ -1,0 +1,6 @@
+// Q11 by Kajal
+
+
+console.log("Task 1");
+console.log("Task 2");
+console.log("Step 3");

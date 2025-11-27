@@ -1,0 +1,8 @@
+// Q12 by Kajal
+console.log("Message First - hello");
+
+setTimeout(() => {
+  console.log("Message second after 2 seconds");
+}, 2000);
+
+console.log("Message third - Done");

@@ -1,0 +1,9 @@
+// Q13 by Kajal
+let tick = setInterval(() => {
+  console.log("Loading...");
+}, 1000);
+
+setTimeout(() => {
+  clearInterval(tick);
+  console.log("Loaded successfully!");
+}, 5000);
