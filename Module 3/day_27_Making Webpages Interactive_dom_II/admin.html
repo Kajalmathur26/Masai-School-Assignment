@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Admin Page</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Book Management</h1>
+
+    <div class="form-container">
+        <h2>Add Book</h2>
+
+        <input type="text" id="title" placeholder="Book Title">
+        <input type="text" id="author" placeholder="Author Name">
+
+        <select id="category">
+            <option value="">Select Category</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Technical">Technical</option>
+        </select>
+
+        <button id="addBtn">Add Book</button>
+    </div>
+
+    <div id="controls">
+        <button id="sortBtn">Sort: A → Z</button>
+
+        <select id="filterSelect">
+            <option value="All">All</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Technical">Technical</option>
+        </select>
+    </div>
+
+    <div class="grid" id="bookGrid"></div>
+
+    <!-- LINK JS -->
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
