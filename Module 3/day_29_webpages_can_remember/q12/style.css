@@ -1,0 +1,12 @@
+/* A simple box to hold all the paragraphs */
+#container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 300px;
+}
+
+/* Just giving buttons a little space so they aren't stuck together */
+button {
+    margin-right: 10px;
+}

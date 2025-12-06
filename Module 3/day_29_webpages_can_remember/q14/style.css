@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#taskInput, #searchInput {
+    width: 250px;
+    padding: 6px;
+}
+
+button {
+    padding: 6px 10px;
+}
+
+ul {
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    padding: 8px;
+    background: #eee;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Completed tasks look crossed */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
