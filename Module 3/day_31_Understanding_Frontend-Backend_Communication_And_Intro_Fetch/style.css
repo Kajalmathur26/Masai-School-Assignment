@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border-left: 5px solid #007bff;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  border-left-color: green !important;
+}
+
+button {
+  margin-left: 8px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-btn { 
+  background: red; 
+  color: #fff; 
+}
+
+.toggle-btn { 
+  background: #007bff; 
+  color: #fff; 
+}
+
+.empty-msg {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+  padding: 20px 0;
+}
